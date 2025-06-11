@@ -15,7 +15,7 @@ download("stopwords")
 stop_words = set(stopwords.words("spanish"))
 
 # --- CARGAR Y LIMPIAR DATOS ---
-df = pd.read_csv("/content/OPINIONES_NIKE_CORREGIDO.csv", sep=";", encoding="latin1")
+df = pd.read_csv("OPINIONES_NIKE_CORREGIDO.csv", sep=";", encoding="latin1")
 df.columns = ["Opinión", "Comentario", "Sentimiento"]
 
 df["Comentario"] = df["Comentario"].astype(str).str.lower().str.replace('"', '').str.strip()
