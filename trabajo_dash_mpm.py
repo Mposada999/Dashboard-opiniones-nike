@@ -92,12 +92,5 @@ def actualizar_nube(sentimiento):
     fig.update_layout(title="Nube de Palabras", xaxis_visible=False, yaxis_visible=False)
     return fig
 
-# --- INICIAR CON NGROK ---
-try:
-    public_url = ngrok.connect(8050)
-    print(f"✅ Tu app está corriendo en: {public_url}")
-except Exception as e:
-    print(f"Error con Ngrok: {e}")
-
-server = app.server
-
+if __name__ == "__main__":
+    app.run(debug=False)
