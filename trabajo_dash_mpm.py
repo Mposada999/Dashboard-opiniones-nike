@@ -91,6 +91,8 @@ def actualizar_nube(sentimiento):
     )
     fig.update_layout(title="Nube de Palabras", xaxis_visible=False, yaxis_visible=False)
     return fig
+    
+server = app.server
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(host="0.0.0.0", port=10000)
