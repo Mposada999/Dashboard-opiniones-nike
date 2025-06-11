@@ -1,0 +1,6 @@
+dash==2.14.2
+pandas==2.2.2
+nltk==3.8.1
+plotly==5.20.0
+wordcloud==1.9.3
+pyngrok==7.1.3
